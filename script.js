@@ -21,11 +21,12 @@ class Person {
         return this.first_name + " " + this.last_name;
     }
 }
+var n =1;
 function handlePerson(){
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
     var year = document.getElementById("year").value;
     var person = new Person(fname , lname, year);
-    alert(person.first_name)
-    document.getElementById("people").innerHTML += person.getFullName() + " and he is " + person.getAge()+ " years old" + "<br>";
+    document.getElementById("people").innerHTML += n + "- " +  person.getFullName() + " and he is " + person.getAge()+ " years old" + "<br>";
+    n++;
 }
